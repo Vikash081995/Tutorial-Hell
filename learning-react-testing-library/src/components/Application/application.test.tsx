@@ -32,8 +32,6 @@ describe("Apllication", () => {
     const customElement = screen.getByTestId("custom-element");
     expect(customElement).toBeInTheDocument();
 
-    //getByDisplayValue
-
     const nameElement = screen.getByRole("textbox", {
       name: "Name",
     });
@@ -47,6 +45,7 @@ describe("Apllication", () => {
     const nameElement3 = screen.getByPlaceholderText("Fullname");
     expect(nameElement3).toBeInTheDocument();
 
+    //getByDisplayValue
     const nameElement4 = screen.getByDisplayValue("Vishwas");
     expect(nameElement4).toBeInTheDocument();
 
